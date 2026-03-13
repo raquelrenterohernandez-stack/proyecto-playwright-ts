@@ -1,12 +1,12 @@
 import {Page} from '@playwright/test'
-export class commonPageMethods{
-    private page!: Page
+export class CommonPageMethods{
+    private page: Page
 
-    contructor(page: Page){
+    constructor(page: Page){
         this.page = page
     }
 
-async navigateToTheApplication(){
-    await this.page.goto('https://www.saucedemo.com/')
+    async navigateToTheApplication(){
+        await this.page.goto('https://www.saucedemo.com/')
 }
 }
