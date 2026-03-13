@@ -2,7 +2,7 @@ import { Page } from '@playwright/test'
 import { LoginPageElements } from './login-page.elements'
 
 export class LoginPageMethods {
-    private page!: Page
+    private page: Page
     private loginPageElements: LoginPageElements
 
     constructor(page: Page) {

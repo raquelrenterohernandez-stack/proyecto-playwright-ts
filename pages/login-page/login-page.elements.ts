@@ -1,7 +1,9 @@
-export class LoginPageElements{
-    private page!: Page
+import { Page } from "@playwright/test"
 
-    contructor(page: Page){
+export class LoginPageElements{
+    private page: Page
+
+    constructor(page: Page){
         this.page = page
     }
 
@@ -12,7 +14,7 @@ export class LoginPageElements{
         }
     }
 
-    get textboxes(){
+    get buttons(){
         return {
             login: this.page.locator('#login-button')
         }
