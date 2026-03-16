@@ -13,4 +13,8 @@ export class ProductsPageMethods {
     async clickAddCart(productName: string){
         await this.productsPageElements.addCartButton(productName).click()
     }
+
+    async clickCartIcon(){
+        await this.productsPageElements.icons.cart.click()
+    }
 }

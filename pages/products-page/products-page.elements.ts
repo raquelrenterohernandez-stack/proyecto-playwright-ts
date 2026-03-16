@@ -9,15 +9,9 @@ export class ProductsPageElements {
 
     get icons(){
         return {
-            Cart: this.page.locator('#shopping_cart_container svg')
+            cart: this.page.locator('.shopping_cart_link')
         }
      }
 
     addCartButton(productName: string) {return this.page.locator(`//div[.="${productName}"]//ancestor::div[@class="inventory_item"]//button`)}
-
-    get buttons(){
-        return {
-           
-        }
-    }
 }
