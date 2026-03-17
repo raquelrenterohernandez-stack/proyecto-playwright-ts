@@ -18,6 +18,7 @@
   "homepage": "https://github.com/raquelrenterohernandez-stack/proyecto-playwright-ts#readme",
   "devDependencies": {
     "@playwright/test": "^1.58.2",
-    "@types/node": "^25.3.5"
+    "@types/node": "^25.3.5",
+    "allure-playwright": "^3.6.0"
   }
 }
