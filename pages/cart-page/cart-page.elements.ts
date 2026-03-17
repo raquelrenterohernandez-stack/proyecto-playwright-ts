@@ -12,7 +12,7 @@ export class CartPageElements {
      get buttons(){
         return {
             continueShopping: this.page.locator('//a[.="Continue Shopping"]'),
-            checkout: this.page.locator('a[href*="Checkout"]')
+            checkout: this.page.locator('#checkout')
         }
      }
     }
