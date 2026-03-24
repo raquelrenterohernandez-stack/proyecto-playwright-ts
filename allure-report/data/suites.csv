@@ -1,4 +1,4 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","7966","Login","chromium","2026-03-23","passed","2026-03-23","","test01.spec.ts","",""
-"","10649","Login","firefox","2026-03-23","passed","2026-03-23","","test01.spec.ts","",""
-"","9738","Login","webkit","2026-03-23","passed","2026-03-23","","test01.spec.ts","",""
+"","14379","Login","firefox","2026-03-24","passed","2026-03-24","","test01.spec.ts","",""
+"","10713","Login","webkit","2026-03-24","passed","2026-03-24","","test01.spec.ts","",""
+"","8254","Login","chromium","2026-03-24","passed","2026-03-24","","test01.spec.ts","",""

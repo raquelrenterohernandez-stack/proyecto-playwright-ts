@@ -6,6 +6,7 @@ import { ProductsPageMethods } from '../pages/products-page/products-page.method
 import { CheckoutOverviewPageMethods } from '../pages/checkout-overview-page/checkout-overview-page.methods';
 import { CheckoutPageMethods } from '../pages/checkout-page/checkout-page.methods'
 import { CartPageMethods } from '../pages/cart-page/cart-page.methods'
+import { Logger } from '../support/logger'
 
 
 const userCredentials = loginPageData.credentials;
@@ -18,6 +19,7 @@ test('Login', async({page})=>{
     const cartPageMethods = new CartPageMethods(page)
     const checkoutPageMethods = new CheckoutPageMethods(page)
 
+    await Logger.logStep('Navigate to the application')
     await commonPageMethods.navigateToTheApplication()
     await loginPageMethods.insertUsername(userCredentials.usernames.standardUser)
     await loginPageMethods.insertPassword(userCredentials.password)
