@@ -19,7 +19,6 @@ test('Login', async({page})=>{
     const cartPageMethods = new CartPageMethods(page)
     const checkoutPageMethods = new CheckoutPageMethods(page)
 
-    await Logger.logStep('Navigate to the application')
     await commonPageMethods.navigateToTheApplication()
     await loginPageMethods.insertUsername(userCredentials.usernames.standardUser)
     await loginPageMethods.insertPassword(userCredentials.password)
