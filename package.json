@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "clean-results": "rm -rf allure-results/*",
-    "run-test": "npx playwright test --reporter=line,allure-playwright --headed",
+    "run-test": "npx playwright test --reporter=line,allure-playwright",
     "generate-report": "allure generate ./allure-results -o ./allure-report --clean",
     "open-report": "allure open ./allure-report",
-    "test": "np run clean-results & npm run run-test & npm run generate-report & npm run open-report"
+    "local-test": "np run clean-results & npm run run-test & npm run generate-report & npm run open-report",
+    "ci-test": "np run clean-results & npm run run-test & npm run generate-report"
   },
   "repository": {
     "type": "git",
@@ -26,5 +27,9 @@
     "@playwright/test": "^1.58.2",
     "@types/node": "^25.3.5",
     "allure-playwright": "^3.6.0"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.38.1",
+    "rimraf": "^6.1.3"
   }
 }
