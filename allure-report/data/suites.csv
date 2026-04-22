@@ -1,0 +1,8 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","5831","Remove items from the cart","","2026-04-21","passed","2026-04-21","Cart test cases","cart.spec.ts","",""
+"","6438","Checkout process","","2026-04-21","passed","2026-04-21","Checkout","checkout.spec.ts","",""
+"","1477","Empty credentials","","2026-04-21","passed","2026-04-21","Login","login.spec.ts","",""
+"","5867","Login with valid credentials","","2026-04-21","passed","2026-04-21","Login","login.spec.ts","",""
+"","5640","Login with invalid credentials","","2026-04-21","passed","2026-04-21","Login","login.spec.ts","",""
+"","5919","Login","","2026-04-21","passed","2026-04-21","Login","login.spec.ts","",""
+"","5759","Add items to the cart","","2026-04-21","passed","2026-04-21","Cart test cases","cart.spec.ts","",""
