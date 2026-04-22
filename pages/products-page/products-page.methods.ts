@@ -1,6 +1,7 @@
 import { Page } from "@playwright/test"
 import { ProductsPageElements } from "./products-page.elements"
 import { Logger } from "../../support/logger"
+import { expect } from "@playwright/test"
 
 export class ProductsPageMethods {
     private page: Page
@@ -19,5 +20,11 @@ export class ProductsPageMethods {
     async clickCartIcon(){
         await Logger.logStep('Click on Cart icon')
         await this.productsPageElements.icons.cart.click()
+    }
+
+    async verifyProductsPageIsDisplayed(){
+        await Logger.logStep('Verify that Products page is displayed')
+        const elementsCount = await this.productsPageElements.otherElements.pageTitle.count()
+        expect(elementsCount).toEqual(1)
     }
 }

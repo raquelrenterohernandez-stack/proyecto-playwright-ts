@@ -1,6 +1,7 @@
 import { Page } from "@playwright/test"
 import { CheckoutPageElements } from "./checkout-page.elements"
 import { Logger } from "../../support/logger"
+import { expect } from "@playwright/test"
 
 export class CheckoutPageMethods {
     private page: Page
@@ -34,5 +35,11 @@ export class CheckoutPageMethods {
     async clickContinueButton(){
         await Logger.logStep('Click on Continue button')
         await this.checkoutPageElements.buttons.continue.click()
+     }
+
+     async verifyCheckoutInformationIsDisplayed() {
+        await Logger.logVerification('Verify that the checkout information is displayed')
+        const elementsCount = await this.checkoutPageElements.otherElements.pageTitle.count()
+        expect(elementsCount).toEqual(1)
      }
 }

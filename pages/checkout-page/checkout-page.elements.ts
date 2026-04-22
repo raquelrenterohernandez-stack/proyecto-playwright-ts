@@ -19,4 +19,10 @@ export class CheckoutPageElements {
             continue: this.page.locator('#continue')
         }
      }
+
+     get otherElements(){
+        return {
+            pageTitle: this.page.locator('.title'),
+        }
+     }
 }
